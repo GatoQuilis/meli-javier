@@ -30,6 +30,16 @@ body {
 
 .logo {
     width: 200px;
+    animation: aumentar 1s linear infinite alternate;
+}
+
+@keyframes aumentar {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
 }
 
 .copy-header {
@@ -98,6 +108,8 @@ body {
 
 .product:hover h2 {
     opacity: 1;
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
 }
 
 .product h2 {
@@ -114,7 +126,7 @@ body {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    transition: opacity 450ms;
+    transition: all 450ms;
 }
 
 @media (min-width: 768px) {
